@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.header {
+    background: rgba(255, 215, 0, 0.5);
+}
+
+.main {
+    background: rgba(255, 99, 71, 0.5);
+}
+
+.sidebar {
+    background: rgba(0, 100, 0, 0.5);
+}
+
+.footer {
+    background: rgba(255, 20, 147, 0.5);
+}
+
+.container {
+    @include mq(md) {
+        display: flex;
+        display: -webkit-box;
+        // 
+    }
+}
+
+.main {
+    @include mq(md) {
+        flex: 3;
+        // 
+    }
+}
+
+.sidebar {
+    @include mq(md) {
+        flex: 1;
+        // 
+    }
+}
